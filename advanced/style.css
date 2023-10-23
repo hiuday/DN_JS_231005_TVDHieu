@@ -1,0 +1,235 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #1c1c1c;
+    height: 100%;
+}
+.contact{
+    background-color: #1c1c1c;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    border: none;
+}
+.contact span i{
+    color: yellow;
+}
+.bodyguard{
+    background-image: url("./img/hero-bg.jpg");
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px 20px;
+    height: 100vh;
+   
+}
+
+.bodyguard_nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+.bodyguard_nav h1{
+    color: white;
+    font-size: 26px;
+}
+.bodyguard  ul {
+    display: flex;
+    list-style: none;
+}
+.bodyguard  a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase; 
+    padding: 20px 10px 20px 10px;
+}
+.bodyguard a:hover{
+    background-color: #1c1c1c;
+   
+}
+.bodyguard a:last-child{
+    margin-right: 30px;
+}
+/* content header */
+.header_content{
+    margin: 200px 80px;
+    width: 50%;
+    color: white;
+}
+.header_content h1{
+    text-transform: uppercase;
+    font-size: 28px;
+line-height: 40px;
+}
+.header_content h1:not(:first-child){
+    color: yellow;
+    margin-bottom: 20px;
+}
+.header_content p{
+    margin-bottom: 20px;
+}
+.header_content button{
+    background-color: white;
+    padding: 8px 25px;
+    border: none;
+}
+.header_content button:last-child{
+    background-color: yellow;
+    color: white;
+}
+
+.circle ul li{
+    width: 20px;
+    height: 20px;
+background-color: yellow;
+border: none;
+border-radius: 50%;
+margin: 0 5px;
+
+}
+.circle ul{
+    margin-right: 100px;
+    display: flex;
+justify-content: flex-end;
+}
+.circle li:nth-child(2){
+    background-color: white;
+}
+main{
+background-color: #1c1c1c;
+margin-top: 70px;
+}
+.title{
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+.banner{
+    margin: 50px 110px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.banner_list {
+    background-color: white;
+    width: 32%;
+    
+    text-align: center;
+    padding: 10px;
+
+}
+.banner_list >*{
+    margin-top: 20px;
+    
+}
+.banner_list h3{
+    text-transform: uppercase;
+}
+.banner_list button{
+    text-transform: capitalize;
+    padding: 8px 25px;
+    background-color: yellow;
+    border: none;
+    color: white;
+}
+.banner_list img{
+    width: 30%;
+    height: 30%;
+}
+footer{
+    background-color: black;
+    color: white;
+    height: 50vh;
+}
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px 0;
+    margin:  100px;
+}
+.footer_nav{
+    width: 30%;
+    margin-left: 30px;
+}
+
+.footer_nav h1{
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+.footer_nav p{
+    line-height: 30px;
+}
+.footer_nav input{
+    border: none;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+.footer_nav button{
+    padding: 6px 18px;
+    border-radius: 20px;
+    border: none;
+    background-color: yellow;
+    color: white;
+    text-transform: uppercase;
+    margin: 10px 0 10px;
+}
+.footer_nav span{
+    padding: 0 4px;
+}
+@media ( max-width:768px) {
+    .contact{
+        flex-direction: column;
+        align-items: center;
+    }
+    .bodyguard{
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 10px 20px;
+        height: 100%;
+        width: 100%;
+    }
+    .bodyguard_nav h1{
+        margin-left: -30px;
+    }
+.bodyguard_nav{
+   flex-direction: column;
+   align-items: center;
+
+    }
+    .bodyguard_nav ul{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 0;
+    }
+    .bodyguard_nav ul li{
+        margin: 10px 0;
+    }
+
+    .circle ul{
+        justify-content: center;
+
+    }
+    .banner{
+        flex-direction: column;
+        align-items: center;
+     
+    }
+    .banner_list{
+        margin: 20px 0;
+        width: 60%;
+    }
+    footer{
+     height: 120%;
+    }
+    .footer{
+       display: grid;
+       grid-template-columns: 70% 70%;
+       grid-template-rows: 70% 70%;
+    }
+}
