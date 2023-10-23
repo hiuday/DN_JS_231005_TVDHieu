@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: 'Lato', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+.about_us{
+    display: flex;
+    margin: 0 100px;
+    align-items: center;
+}
+ h1{
+font-weight: 1000;
+font-size: 24px;
+}
+.about_content{
+    padding: 30px;
+}
+.about_content button{
+    padding: 7px 20px;
+    background-color: #007A73;
+    color: white;
+    border: none;
+
+}
+.about_content h1,p,button{
+    margin-bottom: 30px;
+}
+.about_img img{
+    width: 750px;
+    height: 750px;
+}
+.our_team{
+    text-align: center;
+    margin: 50px 50px;
+}
+.team_avatar{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+}
+.team_avatar figure{
+    background-color: #004546;
+    color: white;
+    text-transform: capitalize;
+    border-radius: 10px;
+    
+}
+.team_avatar figcaption,p{
+    margin-top: 10px;
+}
+.team_avatar img{
+    width: 350px;
+    height: 400px;
+    
+    border-radius: 10px 10px 0 0 ;
+ }
+ /* Moblie */
+@media (max-width:768px) {
+    .about_us{
+        text-align: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        
+    }
+    .about_content p{
+        width: 70%;
+        margin-left: 67px;
+        text-align: center;
+    }
+    .about_img img{
+        width: 60%;
+        height: 60%;
+    }
+    .our_team{
+        display: flex;
+        flex-direction: column;
+    }
+    .our_team .our_content{
+        width: 70%;
+        margin-left: 100px;
+    }
+    .team_avatar{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        flex-wrap: wrap;
+        
+    }
+    .team_avatar figure{
+margin-left: 130px;
+    }
+   
+
+}
